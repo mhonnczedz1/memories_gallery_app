@@ -1,12 +1,29 @@
-# Starter ignore list; T0.2 extends it.
+# OS
 .DS_Store
+
+# Local machine and secrets (11.5)
 local.properties
 *.jks
 *.keystore
 keystore.properties
-*.aab
-*.apk
+
+# Model binaries are downloaded at build time, never committed (E1.8)
+models_pack/src/main/assets/models/*.tflite
+models_pack/src/main/assets/models/*.bin
+
+# Python tool environments
+/tools/**/.venv
+
+# Build output
 build/
 .gradle/
-.idea/
+.kotlin/
+*.aab
+*.apk
+
+# IDE (shared code style is kept)
+.idea/*
+!.idea/codeStyles/
+
+# Claude Code local settings
 .claude/settings.local.json
