@@ -1,0 +1,12 @@
+# Starter ignore list; T0.2 extends it.
+.DS_Store
+local.properties
+*.jks
+*.keystore
+keystore.properties
+*.aab
+*.apk
+build/
+.gradle/
+.idea/
+.claude/settings.local.json
